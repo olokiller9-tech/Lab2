@@ -1,8 +1,8 @@
 class Onlineshop:
     def __init__(self, name, url):
-        self.name = name           # public
-        self.url = url             # public
-        self.products = {}         # public
+        self.name = name          
+        self.url = url            
+        self.products = {}     
 
     def addingItemsToCart(self, customer, product, quantity):
         if product.name in customer._cart:
@@ -43,19 +43,19 @@ class Onlineshop:
 
 class Product:
     def __init__(self, name, description, price, online_shop):
-        self.name = name               # public
-        self.description = description # public
-        self.price = float(price)       # public
-        self.online_shop = online_shop  # public
+        self.name = name              
+        self.description = description 
+        self.price = float(price)      
+        self.online_shop = online_shop  
 
 
 class Customer:
     def __init__(self, name, email, address):
-        self._name = name               # protected
-        self._email = email             # protected
-        self.__address = address        # private
-        self._cart = {}                 # protected
-        self.past_orders = {}           # public
+        self._name = name             
+        self._email = email           
+        self.__address = address        
+        self._cart = {}                 
+        self.past_orders = {}          
 
     # Getter for name
     def get_name(self):
@@ -80,7 +80,6 @@ class Customer:
     # Setter for address
     def set_address(self, new_address):
         self.__address = new_address
-
 
 # Example usage
 my_store = Onlineshop("Gadget World", "www.gadgetworld.com")
