@@ -82,18 +82,18 @@ class Customer:
         self.__address = new_address
 
 # Example usage
-my_store = Onlineshop("Gadget World", "www.gadgetworld.com")
-my_product1 = Product("Laptop", "noob", 49, my_store)
-my_product2 = Product("Mouse", "noobs", 496, my_store)
-my_product3 = Product("Mouse", "noobs", 496, my_store)
+my_store = Onlineshop("Compucom", "www.Compucom.com")
+my_product1 = Product("Laptop", "good", 49, my_store)
+my_product2 = Product("Mouse", "good", 96, my_store)
+my_product3 = Product("Mouse", "good", 96, my_store)
 
-john = Customer("john", "jojo@ghjiotdh", "jostar230")
+conan = Customer("conan", "Conanboy49@gmail.com", "conan848235912")
 
-my_store.addingItemsToCart(john, my_product1, 3)
-print(my_store.checkout(john))
-print(my_store.orderTracking(john, 1))
+my_store.addingItemsToCart(conan, my_product1, 3)
+print(my_store.checkout(conan))
+print(my_store.orderTracking(conan, 1))
 
 # Accessing encapsulated attributes safely
-print(john.get_name())      # john
-print(john.get_email())     # jojo@ghjiotdh
-print(john.get_address())   # jostar230
+print(conan.get_name())      # conan
+print(conan.get_email())     # Conanboy49@gmail.com
+print(conan.get_address())   # conan848235912
